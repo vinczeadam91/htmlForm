@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<style>
+    body {
+         background: linear-gradient(to right, #31e080 0%,#1fd672 100%); 
+        
+    }  
+    
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+   
+    #contact {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: 20%;
+        
+    }
+    
+    #contact #name,#mail,#message {
+        width: 20%;
+        background: linear-gradient(to right, #ffffff 15%,#ffffff 15%,#e1f5ea 39%);
+        color: #000000;
+        margin-top: 5px;
+        height: 25px;
+        text-align: center;
+    }
+    
+    
+    
+
+    
+    #submit {
+        background-color: darkgreen;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 5px;
+        border: none;
+        width: 100;
+        padding-left: 140px;
+        padding-right: 220px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    #social {
+        color: #ffffff;
+        position: relative;
+        left: 60%;
+        font-family: Arial, Times, sans-serif;
+        font-size: 24px;
+    }
+    
+    
+    #contactp {
+        color: #ffffff;
+        position: relative;
+        top: -20%;
+        left: 35%;
+        transform: rotate(270deg); 
+        transform-origin: left top 0;
+        font-size: 70px;
+    }
+    
+    
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+    
+    p>i {
+        background-color: #31e080;
+        color: #355089;
+    }
+    
+    #message {
+        resize: none;
+        height: 180px;
+    }
+    
+
+    
+
+    
+</style>
+    
+    
+    <script src="https://use.fontawesome.com/c4ae7091fd.js"></script>
+</head>
+    
+<body>
+<div id="wrapper">
+        <form name="contact" id="contact" action="index.html" method="post">
+            
+            <input id="name" type="text" placeholder="Név"><br>
+            
+        
+        <input id="mail" type="email" placeholder="E-mail cím"><br>
+        
+        <textarea id="message" placeholder="üzenet" rows="40" cols="50">Üzenet</textarea><br>
+        
+        <button id="submit" name="submit">Küldés</button>
+    
+</form>
+        <p id="social">...Or be social <i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+</div>
+    
+    
+    <p id="contactp">Contact US</p>
+
+    
+</body>
+
+</html>
