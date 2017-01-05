@@ -120,29 +120,41 @@
 
     
     @media only screen 
-  and (min-width: 320px) 
-    and (max-width: 480px) {
+  and (min-width: 320px) {
         #wrapper {
             max-width: 100%;
             margin: 0 auto;
         }
         #formHolder {
-            max-width: 90%;
+            min-width: 40%;
+            max-width: 78%;
         }
         
         input,textarea {
+            min-width: 60%;
             max-width: 100%;
         }
         
         #submitHolder {
+            min-width: 125px;
             position: relative;
-            left: 40px;
+            margin: 0 auto;
+            
             
         }
-        #social {
-            font-size: 100%;
+        #submit {
             position: relative;
-            left: 5px;
+            min-width: 120px;
+            max-width: 360px;
+            margin: 0  auto;
+        }
+        #social {
+            min-width: 68px;
+            max-width: 100%;
+            font-size: 70%;
+            position: relative;
+            left: 88px;
+            margin-top: 5px;
         }
     }
     
@@ -159,8 +171,9 @@
 <div id="wrapper">
     <div id="formHolder">
         <form name="contact" id="contact" action="index.html" method="post">
-            <div id="us">us</div>
-            <div id="formCaption">contact</div>
+                <div id="us">us</div>
+                <div id="formCaption">contact</div>
+            
             
             <input id="name" type="text" placeholder="NEV"><br>
             
@@ -171,8 +184,10 @@
         <textarea id="message" placeholder="ÜZENET"></textarea><br>
         
             <div id="submitHolder">
-            <button id="submit"  name="submit">Küldés</button></div>
-            <div id="social">...Or be social<i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+            <button id="submit"  name="submit">Küldés</button>
+            </div>
+                <div id="social">...Or be social<i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+            
         
     
 </form>
